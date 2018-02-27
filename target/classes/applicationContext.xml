@@ -14,4 +14,8 @@ http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
 	<bean id="mensagem2" class="br.com.fatec.atividade.HelloWorld" scope="prototype">
 		<property name="nome" value="Ze Ninguem" />
 	</bean>
+	
+	<bean id="robo" class="br.com.fatec.atividade.exercicio.Robo">
+		<property name="mensagem" ref="mensagem" />
+	</bean>
 </beans>
